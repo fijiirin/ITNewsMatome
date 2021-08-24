@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,8 +48,14 @@
 				7405CD1F32DE5B2C92025CD5 /* Pods-ITNewsMatome.debug.xcconfig */,
 				2E1C16EC29C102C924D28FF2 /* Pods-ITNewsMatome.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F6CB73226D4EA5400D8DCD7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		6FAEBA2326D4905E001C962D = {
@@ -75,13 +81,38 @@
 			children = (
 				6FAEBA2F26D4905E001C962D /* AppDelegate.swift */,
 				6FAEBA3126D4905E001C962D /* SceneDelegate.swift */,
-				6FAEBA3326D4905E001C962D /* ViewController.swift */,
-				6FAEBA3526D4905E001C962D /* Main.storyboard */,
-				6FAEBA3826D49064001C962D /* Assets.xcassets */,
-				6FAEBA3A26D49064001C962D /* LaunchScreen.storyboard */,
+				6F6CB73226D4EA5400D8DCD7 /* Common */,
+				6FAEBA4326D4E9CA001C962D /* Model */,
+				6FAEBA4426D4E9D0001C962D /* View */,
+				6FAEBA4526D4E9D7001C962D /* Controller */,
 				6FAEBA3D26D49064001C962D /* Info.plist */,
 			);
 			path = ITNewsMatome;
+			sourceTree = "<group>";
+		};
+		6FAEBA4326D4E9CA001C962D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6FAEBA4426D4E9D0001C962D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FAEBA3A26D49064001C962D /* LaunchScreen.storyboard */,
+				6FAEBA3526D4905E001C962D /* Main.storyboard */,
+				6FAEBA3826D49064001C962D /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6FAEBA4526D4E9D7001C962D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6FAEBA3326D4905E001C962D /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		F6B6F82E957E7815C8530391 /* Frameworks */ = {

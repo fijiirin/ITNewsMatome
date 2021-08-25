@@ -21,9 +21,12 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    tableView.delegate = self
+    tableView.dataSource = self
     tableView.backgroundColor = .clear
+    tableView.register(ArticleCell.nib(), forCellReuseIdentifier: ArticleCell.identifier)
     
-    //startParser(url: URL(string: "")!)
+    startParser(url: URL(string: "https://feed.infoq.com/jp")!)
   }
   
   
@@ -44,18 +47,23 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
   
   override func numberOfSections(in tableView: UITableView) -> Int {
     // #warning Incomplete implementation, return the number of sections
-    return 0
+    return 1
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-    return 0
+    return articleItemArray.count
+  }
+  
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 120
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-    
-    
+    let cell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.identifier, for: indexPath) as! ArticleCell
+    cell.backgroundColor = .clear
+    cell.configure(articleItem: articleItemArray[indexPath.row])
+    print(articleItemArray[indexPath.row].title!)
     return cell
   }
   
@@ -80,7 +88,6 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
       switch self.currentElementName {
       case "title":
         lastItem.title = string
-        print(string)
       case "link":
         lastItem.url = string
       case "pubDate":

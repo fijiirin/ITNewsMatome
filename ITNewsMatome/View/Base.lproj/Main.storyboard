@@ -26,7 +26,7 @@
         <!--Create Talk View Controller-->
         <scene sceneID="eIn-Kq-SdJ">
             <objects>
-                <viewController id="DVq-Bk-zHS" customClass="createTalkViewController" customModule="ITNewsMatome" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createTalkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DVq-Bk-zHS" customClass="CreateTalkViewController" customModule="ITNewsMatome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Efk-P0-n4L">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

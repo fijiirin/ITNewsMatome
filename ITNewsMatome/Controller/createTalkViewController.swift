@@ -1,5 +1,5 @@
 //
-//  createTalkViewController.swift
+//  CreateTalkViewController.swift
 //  ITNewsMatome
 //
 //  Created by 藤井凜 on 2021/08/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class createTalkViewController: UIViewController {
+class CreateTalkViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -20,7 +20,7 @@
 		6F6CB74826D5D5FE00D8DCD7 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F6CB74626D5D5FE00D8DCD7 /* ArticleCell.xib */; };
 		6F6CB74A26D5E1BD00D8DCD7 /* SendDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74926D5E1BD00D8DCD7 /* SendDBModel.swift */; };
 		6F6CB74C26D5E1C800D8DCD7 /* LoadDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74B26D5E1C800D8DCD7 /* LoadDBModel.swift */; };
-		6F6CB74E26D65A0700D8DCD7 /* createTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74D26D65A0700D8DCD7 /* createTalkViewController.swift */; };
+		6F6CB74E26D65A0700D8DCD7 /* CreateTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74D26D65A0700D8DCD7 /* CreateTalkViewController.swift */; };
 		6FAEBA3026D4905E001C962D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEBA2F26D4905E001C962D /* AppDelegate.swift */; };
 		6FAEBA3226D4905E001C962D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEBA3126D4905E001C962D /* SceneDelegate.swift */; };
 		6FAEBA3726D4905E001C962D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAEBA3526D4905E001C962D /* Main.storyboard */; };
@@ -43,7 +43,7 @@
 		6F6CB74626D5D5FE00D8DCD7 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		6F6CB74926D5E1BD00D8DCD7 /* SendDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDBModel.swift; sourceTree = "<group>"; };
 		6F6CB74B26D5E1C800D8DCD7 /* LoadDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDBModel.swift; sourceTree = "<group>"; };
-		6F6CB74D26D65A0700D8DCD7 /* createTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createTalkViewController.swift; sourceTree = "<group>"; };
+		6F6CB74D26D65A0700D8DCD7 /* CreateTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTalkViewController.swift; sourceTree = "<group>"; };
 		6FAEBA2C26D4905E001C962D /* ITNewsMatome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITNewsMatome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAEBA2F26D4905E001C962D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FAEBA3126D4905E001C962D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 				6F6CB73B26D50D1700D8DCD7 /* RequestViewController.swift */,
 				6F6CB73F26D50D5B00D8DCD7 /* TalkViewController.swift */,
 				6F6CB74126D50ECA00D8DCD7 /* ArticleViewController.swift */,
-				6F6CB74D26D65A0700D8DCD7 /* createTalkViewController.swift */,
+				6F6CB74D26D65A0700D8DCD7 /* CreateTalkViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				6F6CB74426D5D38300D8DCD7 /* ArticleItem.swift in Sources */,
 				6F6CB73C26D50D1700D8DCD7 /* RequestViewController.swift in Sources */,
 				6FAEBA3226D4905E001C962D /* SceneDelegate.swift in Sources */,
-				6F6CB74E26D65A0700D8DCD7 /* createTalkViewController.swift in Sources */,
+				6F6CB74E26D65A0700D8DCD7 /* CreateTalkViewController.swift in Sources */,
 				6F6CB74226D50ECA00D8DCD7 /* ArticleViewController.swift in Sources */,
 				6F6CB74C26D5E1C800D8DCD7 /* LoadDBModel.swift in Sources */,
 				6F6CB73426D4EBF200D8DCD7 /* BaseViewController.swift in Sources */,

@@ -15,6 +15,24 @@ class TalkViewController: UIViewController, SegementSlideContentScrollViewDelega
     super.viewDidLoad()
     
     
+    //view.translatesAutoresizingMaskIntoConstraints = false
+    createTalkButton()
+  }
+  
+  
+  func createTalkButton() {
+    
+    let button = UIButton()
+    button.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+    button.backgroundColor = .black
+    button.translatesAutoresizingMaskIntoConstraints = false
+    view.addSubview(button)
+    
+    //AutoLayoutでの実装(数値は後で変更する)
+    button.widthAnchor.constraint(equalToConstant: 100).isActive = true
+    button.heightAnchor.constraint(equalToConstant: 100).isActive = true
+    button.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -50).isActive = true
+    button.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -50).isActive = true
   }
   
   

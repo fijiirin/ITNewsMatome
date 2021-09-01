@@ -14,6 +14,7 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
   var parser = XMLParser()
   
   var currentElementName:String!
+  var checkTitle = [String]()
   
   var articleItemArray = [ArticleItem]()
   
@@ -26,7 +27,8 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
     tableView.backgroundColor = .clear
     tableView.register(ArticleCell.nib(), forCellReuseIdentifier: ArticleCell.identifier)
     
-    startParser(url: URL(string: "https://feed.infoq.com/jp")!)
+    //startParser(url: URL(string: "https://feed.infoq.com/jp")!)
+    startParser(url: URL(string: "https://www.gizmodo.jp/index.xml")!)
   }
   
   
@@ -36,7 +38,6 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
     parser.delegate = self
     parser.parse()
   }
-  
   
   @objc var scrollView: UIScrollView {
     return tableView
@@ -63,8 +64,17 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
     let cell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.identifier, for: indexPath) as! ArticleCell
     cell.backgroundColor = .clear
     cell.configure(articleItem: articleItemArray[indexPath.row])
-    print(articleItemArray[indexPath.row].title!)
     return cell
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    let webViewController = WebViewController()
+    webViewController.modalTransitionStyle = .crossDissolve
+    webViewController.articleTitle = articleItemArray[indexPath.row].title!
+    webViewController.articleDate = articleItemArray[indexPath.row].date!
+    webViewController.articleURL = articleItemArray[indexPath.row].url!
+    present(webViewController, animated: true, completion: nil)
   }
   
   func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
@@ -84,10 +94,13 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
     if self.articleItemArray.count > 0 {
       
       var lastItem = self.articleItemArray[self.articleItemArray.count - 1]
+      var articleTitle = String()
       
       switch self.currentElementName {
       case "title":
-        lastItem.title = string
+        checkTitle.append(string)
+        articleTitle = checkTitle.joined(separator: "")
+        lastItem.title = articleTitle
       case "link":
         lastItem.url = string
       case "pubDate":
@@ -99,6 +112,7 @@ class ArticleViewController: UITableViewController, SegementSlideContentScrollVi
   }
   
   func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+    checkTitle = [String]()
     self.currentElementName = nil
   }
   

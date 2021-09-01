@@ -77,11 +77,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		6F6CB73226D4EA5400D8DCD7 /* Common */ = {
+		6F6CB77726E0435500D8DCD7 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6FAEBA2F26D4905E001C962D /* AppDelegate.swift */,
+				6FAEBA3126D4905E001C962D /* SceneDelegate.swift */,
+				6FAEBA3526D4905E001C962D /* Main.storyboard */,
+				6FAEBA3A26D49064001C962D /* LaunchScreen.storyboard */,
+				6FAEBA3826D49064001C962D /* Assets.xcassets */,
+				6FAEBA3D26D49064001C962D /* Info.plist */,
+				6F6CB73526D4EECB00D8DCD7 /* GoogleService-Info.plist */,
 			);
-			path = Common;
+			path = Util;
 			sourceTree = "<group>";
 		};
 		6FAEBA2326D4905E001C962D = {
@@ -105,14 +112,10 @@
 		6FAEBA2E26D4905E001C962D /* ITNewsMatome */ = {
 			isa = PBXGroup;
 			children = (
-				6FAEBA2F26D4905E001C962D /* AppDelegate.swift */,
-				6FAEBA3126D4905E001C962D /* SceneDelegate.swift */,
-				6F6CB73226D4EA5400D8DCD7 /* Common */,
 				6FAEBA4326D4E9CA001C962D /* Model */,
 				6FAEBA4426D4E9D0001C962D /* View */,
 				6FAEBA4526D4E9D7001C962D /* Controller */,
-				6FAEBA3D26D49064001C962D /* Info.plist */,
-				6F6CB73526D4EECB00D8DCD7 /* GoogleService-Info.plist */,
+				6F6CB77726E0435500D8DCD7 /* Util */,
 			);
 			path = ITNewsMatome;
 			sourceTree = "<group>";
@@ -130,9 +133,6 @@
 		6FAEBA4426D4E9D0001C962D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6FAEBA3A26D49064001C962D /* LaunchScreen.storyboard */,
-				6FAEBA3526D4905E001C962D /* Main.storyboard */,
-				6FAEBA3826D49064001C962D /* Assets.xcassets */,
 				6F6CB74526D5D5FE00D8DCD7 /* ArticleCell.swift */,
 				6F6CB74626D5D5FE00D8DCD7 /* ArticleCell.xib */,
 			);

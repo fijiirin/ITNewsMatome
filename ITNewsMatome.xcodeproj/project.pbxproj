@@ -21,6 +21,7 @@
 		6F6CB74A26D5E1BD00D8DCD7 /* SendDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74926D5E1BD00D8DCD7 /* SendDBModel.swift */; };
 		6F6CB74C26D5E1C800D8DCD7 /* LoadDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74B26D5E1C800D8DCD7 /* LoadDBModel.swift */; };
 		6F6CB74E26D65A0700D8DCD7 /* CreateTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74D26D65A0700D8DCD7 /* CreateTalkViewController.swift */; };
+		6F6CB77526DEF6A600D8DCD7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB77426DEF6A600D8DCD7 /* WebViewController.swift */; };
 		6FAEBA3026D4905E001C962D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEBA2F26D4905E001C962D /* AppDelegate.swift */; };
 		6FAEBA3226D4905E001C962D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEBA3126D4905E001C962D /* SceneDelegate.swift */; };
 		6FAEBA3726D4905E001C962D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAEBA3526D4905E001C962D /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		6F6CB74926D5E1BD00D8DCD7 /* SendDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDBModel.swift; sourceTree = "<group>"; };
 		6F6CB74B26D5E1C800D8DCD7 /* LoadDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDBModel.swift; sourceTree = "<group>"; };
 		6F6CB74D26D65A0700D8DCD7 /* CreateTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTalkViewController.swift; sourceTree = "<group>"; };
+		6F6CB77426DEF6A600D8DCD7 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6FAEBA2C26D4905E001C962D /* ITNewsMatome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITNewsMatome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAEBA2F26D4905E001C962D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FAEBA3126D4905E001C962D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				6F6CB73F26D50D5B00D8DCD7 /* TalkViewController.swift */,
 				6F6CB74126D50ECA00D8DCD7 /* ArticleViewController.swift */,
 				6F6CB74D26D65A0700D8DCD7 /* CreateTalkViewController.swift */,
+				6F6CB77426DEF6A600D8DCD7 /* WebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				6F6CB74C26D5E1C800D8DCD7 /* LoadDBModel.swift in Sources */,
 				6F6CB73426D4EBF200D8DCD7 /* BaseViewController.swift in Sources */,
 				6F6CB74026D50D5C00D8DCD7 /* TalkViewController.swift in Sources */,
+				6F6CB77526DEF6A600D8DCD7 /* WebViewController.swift in Sources */,
 				6F6CB74726D5D5FE00D8DCD7 /* ArticleCell.swift in Sources */,
 				6F6CB73A26D50C3F00D8DCD7 /* FavoriteViewController.swift in Sources */,
 			);

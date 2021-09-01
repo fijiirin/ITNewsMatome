@@ -15,7 +15,6 @@ class TalkViewController: UIViewController, SegementSlideContentScrollViewDelega
     super.viewDidLoad()
     
     
-    //view.translatesAutoresizingMaskIntoConstraints = false
     createTalkButton()
   }
   

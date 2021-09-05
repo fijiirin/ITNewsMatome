@@ -22,6 +22,7 @@
 		6F6CB74C26D5E1C800D8DCD7 /* LoadDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74B26D5E1C800D8DCD7 /* LoadDBModel.swift */; };
 		6F6CB74E26D65A0700D8DCD7 /* CreateTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB74D26D65A0700D8DCD7 /* CreateTalkViewController.swift */; };
 		6F6CB77526DEF6A600D8DCD7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB77426DEF6A600D8DCD7 /* WebViewController.swift */; };
+		6F6CB77926E5778A00D8DCD7 /* PlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB77826E5778A00D8DCD7 /* PlaceHolderTextView.swift */; };
 		6FAEBA3026D4905E001C962D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEBA2F26D4905E001C962D /* AppDelegate.swift */; };
 		6FAEBA3226D4905E001C962D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEBA3126D4905E001C962D /* SceneDelegate.swift */; };
 		6FAEBA3726D4905E001C962D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAEBA3526D4905E001C962D /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		6F6CB74B26D5E1C800D8DCD7 /* LoadDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDBModel.swift; sourceTree = "<group>"; };
 		6F6CB74D26D65A0700D8DCD7 /* CreateTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTalkViewController.swift; sourceTree = "<group>"; };
 		6F6CB77426DEF6A600D8DCD7 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6F6CB77826E5778A00D8DCD7 /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
 		6FAEBA2C26D4905E001C962D /* ITNewsMatome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITNewsMatome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAEBA2F26D4905E001C962D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FAEBA3126D4905E001C962D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				6FAEBA3826D49064001C962D /* Assets.xcassets */,
 				6FAEBA3D26D49064001C962D /* Info.plist */,
 				6F6CB73526D4EECB00D8DCD7 /* GoogleService-Info.plist */,
+				6F6CB77826E5778A00D8DCD7 /* PlaceHolderTextView.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				6F6CB73826D50A9D00D8DCD7 /* ContactViewController.swift in Sources */,
 				6F6CB74A26D5E1BD00D8DCD7 /* SendDBModel.swift in Sources */,
 				6F6CB74426D5D38300D8DCD7 /* ArticleItem.swift in Sources */,
+				6F6CB77926E5778A00D8DCD7 /* PlaceHolderTextView.swift in Sources */,
 				6F6CB73C26D50D1700D8DCD7 /* RequestViewController.swift in Sources */,
 				6FAEBA3226D4905E001C962D /* SceneDelegate.swift in Sources */,
 				6F6CB74E26D65A0700D8DCD7 /* CreateTalkViewController.swift in Sources */,
@@ -441,7 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW79DC9TGF;
-				INFOPLIST_FILE = ITNewsMatome/Info.plist;
+				INFOPLIST_FILE = ITNewsMatome/Util/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW79DC9TGF;
-				INFOPLIST_FILE = ITNewsMatome/Info.plist;
+				INFOPLIST_FILE = ITNewsMatome/Util/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

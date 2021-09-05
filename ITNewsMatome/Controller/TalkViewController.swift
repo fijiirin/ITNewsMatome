@@ -39,6 +39,7 @@ class TalkViewController: UIViewController, SegementSlideContentScrollViewDelega
     
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let createTalkVC = storyboard.instantiateViewController(withIdentifier: "createTalkVC") as! CreateTalkViewController
+    createTalkVC.modalPresentationStyle = .fullScreen
     self.present(createTalkVC, animated: true, completion: nil)
   }
   

@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateTalkViewController: UIViewController {
   
   @IBOutlet weak var nameTextField: UITextField!
   @IBOutlet weak var messageTextView: PlaceHolderTextView!
   
-  
+  let sendDBModel = SendDBModel()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,15 +22,11 @@ class CreateTalkViewController: UIViewController {
     nameTextField.becomeFirstResponder()
   }
   
+  @IBAction func send(_ sender: Any) {
+    
+    sendDBModel.sendTalk(name: nameTextField.text!, message: messageTextView.text!, userID: Auth.auth().currentUser!.uid)
+  }
   
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
+  
   
 }

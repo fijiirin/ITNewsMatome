@@ -12,6 +12,7 @@ import SegementSlide
 class BaseViewController: SegementSlideDefaultViewController {
   
   
+  
   override func viewDidLoad() {
     
     super.viewDidLoad()
